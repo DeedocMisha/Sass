@@ -1,0 +1,81 @@
+@charset "UTF-8";
+.iff {
+  background-color: green !important;
+}
+
+.a-1 {
+  background-color: gray;
+}
+
+.a-2 {
+  background-color: gray;
+}
+
+.a-3 {
+  background-color: gray;
+}
+
+.a-4 {
+  background-color: gray;
+}
+
+.a-5 {
+  background-color: gray;
+}
+
+.func {
+  color: green;
+}
+
+.select-green {
+  background-color: green;
+}
+
+.select-gray {
+  background-color: gray;
+}
+
+.select-yellow {
+  background-color: yellow;
+}
+
+.select-black {
+  background-color: black;
+}
+
+.procent {
+  color: #00e600;
+}
+
+/*Переменные:*/
+body {
+  height: 100vh;
+  background-color: #0d2c5c;
+}
+
+.first, .second {
+  width: 300px;
+}
+
+/*Использование переменных*/
+h {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+button {
+  transition: border-color 0.2s linear;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 2px;
+  background-color: white;
+}
+button:hover {
+  border-color: black;
+  border-width: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+$colors:green,gray,yellow,black;
+@each $color in $colors {
+  .select-#{$color} {
+    background-color: $color;
+  }
+}
+
+

@@ -1,0 +1,31 @@
+//IF
+.iff{
+$light:true;
+@if $light{
+   background-color: green !important;
+}
+@else {
+  background-color: red;
+}}
+//For
+$i:5;
+@for $i from 1 through $i{
+  .a-#{$i}{
+    background-color: gray;
+
+  }
+}
+//Function!!!
+@function fn($arg){
+  @if $arg == 'gr'
+{
+    @return green;
+}
+  @else{
+    @return null;
+  }
+
+}
+.func{
+  color:fn('gr');
+}

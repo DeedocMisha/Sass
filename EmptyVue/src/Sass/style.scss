@@ -1,0 +1,45 @@
+
+@use 'base' as b; //Импорт _b
+@use 'base2' as c; //Импорт _b
+%a{
+  color:lighten(green,20%) ;
+}
+
+.procent{
+  @extend %a;
+}
+/*Переменные:*/
+$primary-color:#0d2c5c;
+body{
+  height:100vh /*!default    если можно будет переписывать перем в будущем*/;
+  background-color: $primary-color;
+}
+
+.first, .second{ //Для 2 классов припис стили:
+width: 300px;
+}
+
+/*Использование переменных*/
+h{
+  font:{
+    size: 40px;
+    weight: bold;
+  }
+
+  color: white;
+}
+button{
+  transition: border-color 0.2s linear; // Изменено на border-color
+  &:hover{
+  border-color: black;
+    border-width: 2px;
+
+}
+  border-color: white;
+  border-width: 2px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 2px;
+  background-color: white;
+}
+
